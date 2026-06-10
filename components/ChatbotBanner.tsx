@@ -30,7 +30,7 @@ export default function ChatbotBanner() {
           </div>
 
           <a
-            href="https://wa.me/5491158042821?text=Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20el%20chatbot%20con%20IA"
+            href="https://wa.me/5491159568286?text=Hola!%20Quiero%20saber%20m%C3%A1s%20sobre%20el%20chatbot%20con%20IA"
             target="_blank"
             rel="noopener noreferrer"
             className="whitespace-nowrap px-6 py-3 rounded-full bg-gradient-to-r from-[#6C47FF] to-[#00D4FF] text-white text-sm font-medium hover:opacity-90 transition-opacity flex-shrink-0"

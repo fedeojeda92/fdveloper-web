@@ -22,7 +22,7 @@ function SchemaOrg() {
     "@type": "ProfessionalService",
     name: "FDveloper",
     description: "Agencia de desarrollo web con IA integrada",
-    url: "https://fdveloper.dev",
+    url: "https://fdveloper.com",
     telephone: "+5491159568286",
     address: {
       "@type": "PostalAddress",

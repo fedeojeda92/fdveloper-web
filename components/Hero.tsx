@@ -92,7 +92,7 @@ export default function Hero() {
               <div className="w-3 h-3 rounded-full bg-[#FF5F57]" />
               <div className="w-3 h-3 rounded-full bg-[#FEBC2E]" />
               <div className="w-3 h-3 rounded-full bg-[#28C840]" />
-              <span className="ml-4 text-xs text-[#888888]">fdveloper.dev</span>
+              <span className="ml-4 text-xs text-[#888888]">fdveloper.com</span>
             </div>
 
             {/* Code */}
