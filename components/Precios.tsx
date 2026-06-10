@@ -8,7 +8,7 @@ const WHATSAPP_URL =
 const planes = [
   {
     titulo: "Landing Page",
-    precio: "desde $90.000",
+    precio: "desde $250.000",
     destacado: false,
     incluye: [
       "Diseño a medida",
@@ -21,7 +21,7 @@ const planes = [
   },
   {
     titulo: "Sitio Completo",
-    precio: "desde $150.000",
+    precio: "desde $450.000",
     destacado: true,
     badge: "MÁS ELEGIDO",
     incluye: [
@@ -35,7 +35,7 @@ const planes = [
   },
   {
     titulo: "Con IA",
-    precio: "desde $350.000",
+    precio: "desde $650.000",
     destacado: false,
     incluye: [
       "Todo lo de Sitio Completo",
@@ -145,7 +145,7 @@ export default function Precios() {
         <p className="text-[#888888] text-sm">
           ¿Ya tenés tu web?{" "}
           <span className="text-[#F5F5F5] font-medium">
-            Mantenimiento mensual desde $40.000/mes
+            Mantenimiento mensual desde $60.000/mes
           </span>
         </p>
         <a

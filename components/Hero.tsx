@@ -5,15 +5,9 @@ import { motion } from "framer-motion";
 const WHATSAPP_URL =
   "https://wa.me/5491159568286?text=Hola!%20Vi%20tu%20web%20y%20quiero%20consultar%20sobre%20un%20proyecto";
 
-const stats = [
-  { value: "2+", label: "Proyectos entregados" },
-  { value: "7 días", label: "Tiempo de entrega" },
-  { value: "100%", label: "Clientes satisfechos" },
-];
-
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center pt-20 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section className="min-h-screen flex items-center py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
         {/* Left column */}
         <motion.div
@@ -33,7 +27,7 @@ export default function Hero() {
           </motion.span>
 
           {/* H1 */}
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight font-space">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight font-space">
             Webs profesionales
             <br />
             <span className="bg-gradient-to-r from-[#6C47FF] to-[#00D4FF] bg-clip-text text-transparent">
@@ -67,18 +61,21 @@ export default function Hero() {
           </div>
 
           {/* Stats */}
-          <div className="flex gap-8 pt-4">
-            {stats.map((stat, i) => (
-              <div key={i} className="flex flex-col">
-                <span className="text-2xl font-bold text-[#F5F5F5]">
-                  {stat.value}
-                </span>
-                <span className="text-xs text-[#888888]">{stat.label}</span>
-                {i < stats.length - 1 && (
-                  <div className="absolute" />
-                )}
-              </div>
-            ))}
+          <div className="flex items-center gap-6 mt-8 pt-8 border-t border-[#222222]">
+            <div className="text-center">
+              <p className="text-2xl font-bold text-white">2+</p>
+              <p className="text-xs text-[#888888] mt-1">Proyectos<br/>entregados</p>
+            </div>
+            <div className="w-px h-10 bg-[#222222]"/>
+            <div className="text-center">
+              <p className="text-2xl font-bold text-white">7 días</p>
+              <p className="text-xs text-[#888888] mt-1">Tiempo de<br/>entrega</p>
+            </div>
+            <div className="w-px h-10 bg-[#222222]"/>
+            <div className="text-center">
+              <p className="text-2xl font-bold text-white">100%</p>
+              <p className="text-xs text-[#888888] mt-1">Clientes<br/>satisfechos</p>
+            </div>
           </div>
         </motion.div>
 

@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Servicios from "@/components/Servicios";
+import ChatbotBanner from "@/components/ChatbotBanner";
 import Portfolio from "@/components/Portfolio";
 import Proceso from "@/components/Proceso";
 import Precios from "@/components/Precios";
@@ -15,6 +16,7 @@ export default function Home() {
       <main>
         <Hero />
         <Servicios />
+        <ChatbotBanner />
         <Portfolio />
         <Proceso />
         <Precios />
