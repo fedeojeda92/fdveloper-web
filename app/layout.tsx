@@ -7,6 +7,9 @@ export const metadata: Metadata = {
     "Webs profesionales con IA integrada, en 7 días. Landing pages, sitios web y chatbots para negocios argentinos. Desde $250.000.",
   keywords:
     "desarrollo web argentina, páginas web con ia, landing page argentina, diseño web buenos aires, agencia web argentina, next.js argentina",
+  verification: {
+    google: "jW5DmN0OEhPllxSLmBzgmbS0-BYGIo7ZszxUYO4vukU",
+  },
   openGraph: {
     title: "FDveloper | Webs profesionales con IA, en 7 días",
     description:
@@ -59,3 +62,4 @@ export default function RootLayout({
     </html>
   );
 }
+
