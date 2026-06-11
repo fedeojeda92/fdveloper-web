@@ -2,13 +2,16 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "FDveloper | Desarrollo Web con IA en Argentina",
+  title: "FDveloper | Webs profesionales con IA, en 7 días",
   description:
     "Webs profesionales con IA integrada, en 7 días. Landing pages, sitios web y chatbots para negocios argentinos. Desde $250.000.",
   keywords:
     "desarrollo web argentina, páginas web con ia, landing page argentina, diseño web buenos aires, agencia web argentina, next.js argentina",
   verification: {
     google: "jW5DmN0OEhPllxSLmBzgmbS0-BYGIo7ZszxUYO4vukU",
+  },
+  twitter: {
+    card: "summary_large_image",
   },
   openGraph: {
     title: "FDveloper | Webs profesionales con IA, en 7 días",
@@ -22,17 +25,41 @@ export const metadata: Metadata = {
 function SchemaOrg() {
   const schema = {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
+    "@type": "LocalBusiness",
     name: "FDveloper",
-    description: "Agencia de desarrollo web con IA integrada",
-    url: "https://fdveloper.com",
-    telephone: "+5491159568286",
+    description:
+      "Agencia de desarrollo web con IA integrada para negocios argentinos. Webs profesionales en 7 días.",
+    url: "https://www.fdveloper.com",
+    telephone: "+54-9-11-5956-8286",
+    email: "contacto@fdveloper.com",
     address: {
       "@type": "PostalAddress",
+      addressLocality: "Buenos Aires",
+      addressRegion: "Buenos Aires",
       addressCountry: "AR",
     },
-    sameAs: ["https://www.instagram.com/fdveloper/"],
+    areaServed: {
+      "@type": "GeoCircle",
+      geoMidpoint: {
+        "@type": "GeoCoordinates",
+        latitude: -34.6037,
+        longitude: -58.3816,
+      },
+      geoRadius: "50000",
+    },
     priceRange: "$$",
+    openingHours: "Mo-Fr 09:00-18:00",
+    sameAs: [
+      "https://www.instagram.com/fdveloper",
+      "https://wa.me/5491159568286",
+    ],
+    serviceType: [
+      "Desarrollo web",
+      "Landing pages",
+      "Sitios web con IA",
+      "Chatbots",
+      "Mantenimiento web",
+    ],
   };
 
   return (
@@ -50,8 +77,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es" className="dark">
-      <body className="font-space antialiased bg-[#0A0A0A] text-[#F5F5F5]">
+      <head>
         <SchemaOrg />
+      </head>
+      <body className="font-space antialiased bg-[#0A0A0A] text-[#F5F5F5]">
         {children}
         <script
           dangerouslySetInnerHTML={{
