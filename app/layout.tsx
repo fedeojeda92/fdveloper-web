@@ -31,7 +31,7 @@ function SchemaOrg() {
       "Agencia de desarrollo web con IA integrada para negocios argentinos. Webs profesionales en 7 días.",
     url: "https://www.fdveloper.com",
     telephone: "+54-9-11-5956-8286",
-    email: "contacto@fdveloper.com",
+    email: "contacto.fdveloper@gmail.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Buenos Aires",

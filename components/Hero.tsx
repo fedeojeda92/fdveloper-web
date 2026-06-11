@@ -60,6 +60,16 @@ export default function Hero() {
             </a>
           </div>
 
+          <p className="text-sm text-[#888888] opacity-60 mt-2">
+            O escribinos a{' '}
+            <a
+              href="mailto:contacto.fdveloper@gmail.com"
+              className="underline hover:opacity-100 transition-opacity"
+            >
+              contacto.fdveloper@gmail.com
+            </a>
+          </p>
+
           {/* Stats */}
           <div className="flex items-center gap-6 mt-8 pt-8 border-t border-[#222222]">
             <div className="text-center">
