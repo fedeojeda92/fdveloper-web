@@ -60,6 +60,7 @@ export default function FAQ() {
             <button
               onClick={() => setOpenIndex(openIndex === i ? null : i)}
               className="w-full flex items-center justify-between p-5 text-left"
+              suppressHydrationWarning
             >
               <span className="font-medium font-space text-[#F5F5F5] pr-4">
                 {p.q}

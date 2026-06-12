@@ -69,7 +69,7 @@ export default function ContactForm() {
           </p>
         </div>
 
-        <div className="bg-[#111111] backdrop-blur-sm border border-[#222222] rounded-2xl p-8 space-y-5">
+        <div className="bg-[#111111] backdrop-blur-sm border border-[#222222] rounded-2xl p-8 space-y-5" suppressHydrationWarning>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
               <label className="block text-sm text-[#888888] mb-2">Nombre *</label>
@@ -79,6 +79,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 placeholder="Tu nombre"
                 className={inputClass}
+                suppressHydrationWarning
               />
             </div>
             <div>
@@ -90,6 +91,7 @@ export default function ContactForm() {
                 onChange={handleChange}
                 placeholder="tu@email.com"
                 className={inputClass}
+                suppressHydrationWarning
               />
             </div>
           </div>
@@ -102,6 +104,7 @@ export default function ContactForm() {
               onChange={handleChange}
               placeholder="Ej: Panadería La Esquina"
               className={inputClass}
+              suppressHydrationWarning
             />
           </div>
 
@@ -112,6 +115,7 @@ export default function ContactForm() {
               value={formData.service}
               onChange={handleChange}
               className={inputClass}
+              suppressHydrationWarning
             >
               <option value="" disabled>Seleccioná una opción</option>
               {services.map((s) => (
@@ -149,6 +153,7 @@ export default function ContactForm() {
             onClick={handleSubmit}
             disabled={status === 'loading'}
             className="w-full bg-gradient-to-r from-[#6C47FF] to-[#00D4FF] hover:opacity-90 disabled:opacity-50 disabled:cursor-not-allowed text-white font-semibold py-4 rounded-xl transition-all duration-200 flex items-center justify-center gap-2"
+            suppressHydrationWarning
           >
             {status === 'loading' ? (
               <>Enviando...</>
