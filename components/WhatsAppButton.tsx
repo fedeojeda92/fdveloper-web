@@ -1,18 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const WHATSAPP_URL =
   "https://wa.me/5491159568286?text=Hola!%20Vi%20tu%20web%20y%20quiero%20consultar%20sobre%20un%20proyecto";
 
 export default function WhatsAppButton() {
+  const t = useTranslations("whatsapp");
+
   return (
     <a
       href={WHATSAPP_URL}
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-24 right-6 z-50 group"
-      aria-label="Contactar por WhatsApp"
+      aria-label={t("ariaLabel")}
     >
       <motion.div
         animate={{ scale: [1, 1.1, 1] }}
@@ -20,7 +23,7 @@ export default function WhatsAppButton() {
         className="flex items-center gap-2"
       >
         <span className="hidden sm:block bg-white text-gray-800 text-xs font-medium px-3 py-1.5 rounded-full shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap">
-          Hablemos
+          {t("tooltip")}
         </span>
         <div className="w-14 h-14 rounded-full bg-[#25D366] flex items-center justify-center shadow-lg shadow-[#25D366]/30 hover:scale-110 transition-transform">
           <svg

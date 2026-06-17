@@ -1,30 +1,27 @@
 import { MetadataRoute } from 'next'
+import { routing } from '@/src/i18n/routing'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: 'https://www.fdveloper.com',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 1,
-    },
-    {
-      url: 'https://www.fdveloper.com/#servicios',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.fdveloper.com/#portfolio',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.8,
-    },
-    {
-      url: 'https://www.fdveloper.com/#precios',
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-  ]
+  const baseUrl = 'https://www.fdveloper.com'
+  const entries: MetadataRoute.Sitemap = []
+
+  const sections = ['', '#servicios', '#portfolio', '#precios']
+
+  for (const locale of routing.locales) {
+    for (const section of sections) {
+      entries.push({
+        url: `${baseUrl}/${locale}${section}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly',
+        priority: section === '' ? 1 : 0.8,
+        alternates: {
+          languages: Object.fromEntries(
+            routing.locales.map((loc) => [loc, `${baseUrl}/${loc}${section}`])
+          ),
+        },
+      })
+    }
+  }
+
+  return entries
 }

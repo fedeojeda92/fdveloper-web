@@ -1,0 +1,208 @@
+{
+  "nav": {
+    "servicios": "Services",
+    "portfolio": "Portfolio",
+    "proceso": "Process",
+    "planes": "Plans",
+    "contacto": "Contact",
+    "hablemos": "Let's talk"
+  },
+  "hero": {
+    "badge": "Available for new projects",
+    "title1": "Professional websites",
+    "title2": "with integrated AI.",
+    "description": "We create your custom website with modern technology and artificial intelligence tools. Ready in 7 days, no templates, no excuses.",
+    "ctaProjects": "View projects",
+    "ctaWhatsApp": "Let's talk on WhatsApp",
+    "orEmail": "Or email us at",
+    "statsProjects": "Projects\ndelivered",
+    "statsTime": "Delivery\ntime",
+    "statsClients": "Satisfied\nclients",
+    "codeComment": "Your new website",
+    "codeSpeed": "speed",
+    "codeDesign": "design",
+    "codeAI": "ai",
+    "codeDelivery": "delivery",
+    "codeSpeedVal": "⚡ 100/100",
+    "codeDesignVal": "✦ custom",
+    "codeAIVal": "🤖 integrated",
+    "codeDeliveryVal": "📅 7 days",
+    "codeReady": "✓ Ready for production"
+  },
+  "servicios": {
+    "title": "What do we do?",
+    "subtitle": "Scalable digital solutions to grow your business.",
+    "items": {
+      "landing": {
+        "titulo": "Custom Web Development",
+        "descripcion": "Need a digital presence without complications? We create high-impact landing pages with professional UX/UI web design that convert visitors into real customers. Every project is unique, so we focus on providing you with a technical solution that perfectly fits your business goals and budget.",
+        "cta": "Request a custom quote"
+      },
+      "sitio-completo": {
+        "titulo": "Complete Professional Website",
+        "descripcion": "Your business deserves a digital presence that generates trust and results. We develop professional websites with Next.js programming, performance optimization and advanced SEO so your customers find you first. Every project is unique, so we focus on providing you with a technical solution that perfectly fits your business goals and budget.",
+        "cta": "Inquire about this service"
+      },
+      "ia": {
+        "titulo": "Artificial Intelligence Integration",
+        "descripcion": "Automate your customer service and differentiate your business from the competition. We implement AI chatbots, virtual assistants and smart automations that work for you 24 hours a day. Scalable digital solutions that adapt to your business evolution. Every project is unique, so we focus on providing you with a technical solution that perfectly fits your business goals and budget.",
+        "cta": "Inquire about this service"
+      },
+      "mantenimiento": {
+        "titulo": "Web Maintenance and Support",
+        "descripcion": "Your website needs constant care to maintain its performance and security. We offer monthly maintenance with updates, uptime monitoring, speed optimization and priority technical support. Every project is unique, so we focus on providing you with a technical solution that perfectly fits your business goals and budget.",
+        "cta": "Request a custom quote"
+      }
+    }
+  },
+  "chatbot": {
+    "title": "Try the AI on this very website",
+    "description": "The chatbot you see in the bottom right is exactly what you can have for your business. Automatic 24/7 service, answers FAQs and directs inquiries.",
+    "cta": "I want this on my website →"
+  },
+  "portfolio": {
+    "title": "Real projects",
+    "subtitle": "Every project is unique. These are some of the businesses that already trust FDveloper.",
+    "viewProject": "View project →"
+  },
+  "proceso": {
+    "title": "How do we work?",
+    "subtitle": "A simple, transparent process with no surprises.",
+    "steps": {
+      "step1": {
+        "titulo": "Free consultation",
+        "descripcion": "Tell me what you need via WhatsApp. No forms, no unnecessary meetings. I reply the same day."
+      },
+      "step2": {
+        "titulo": "Proposal and pricing",
+        "descripcion": "Within 24 hours I send you the proposal with project details and final price. No hidden costs."
+      },
+      "step3": {
+        "titulo": "Development",
+        "descripcion": "We start. I show you progress during the process so you can give real-time feedback."
+      },
+      "step4": {
+        "titulo": "Delivery and deploy",
+        "descripcion": "Your website live on Vercel with configured domain. Ready in 7 days from start."
+      }
+    }
+  },
+  "precios": {
+    "title": "Custom plans",
+    "subtitle": "Every project is different. Contact us and we'll create a proposal adapted to your needs and budget.",
+    "plans": {
+      "landing": {
+        "titulo": "Landing Page",
+        "descripcion": "Ideal for launching a new service or product",
+        "incluye": [
+          "Custom design",
+          "Mobile responsive",
+          "Basic SEO",
+          "WhatsApp CTA",
+          "Deploy on Vercel",
+          "Delivery in 7 days"
+        ]
+      },
+      "completo": {
+        "titulo": "Complete Site",
+        "descripcion": "For businesses that need a complete digital presence",
+        "badge": "MOST CHOSEN",
+        "incluye": [
+          "Everything in Landing",
+          "Multiple pages",
+          "Catalog or blog",
+          "Contact form",
+          "Google Analytics",
+          "Advanced SEO"
+        ]
+      },
+      "ia": {
+        "titulo": "With AI",
+        "descripcion": "Smart automation to scale your business",
+        "incluye": [
+          "Everything in Complete Site",
+          "Integrated chatbot",
+          "Virtual assistant",
+          "Automations",
+          "WhatsApp integration",
+          "Priority support"
+        ]
+      }
+    },
+    "consultar": "Inquire",
+    "mantenimiento": {
+      "texto": "Already have a website?",
+      "oferta": "We offer monthly maintenance with technical support included"
+    }
+  },
+  "contacto": {
+    "title": "Tell us about your project",
+    "subtitle": "Fill out the form and we'll respond within 24 hours. Or if you prefer,",
+    "whatsappLink": "write to us on WhatsApp",
+    "name": "Name *",
+    "namePlaceholder": "Your name",
+    "email": "Email *",
+    "business": "Your business name",
+    "businessPlaceholder": "E.g.: La Esquina Bakery",
+    "service": "What service interests you?",
+    "servicePlaceholder": "Select an option",
+    "services": [
+      "Landing Page",
+      "Complete Website",
+      "AI Integration",
+      "Maintenance and Support",
+      "Not sure yet, I want advice"
+    ],
+    "message": "Message *",
+    "messagePlaceholder": "Tell us a bit about your business and what you need...",
+    "sending": "Sending...",
+    "send": "Send inquiry",
+    "success": "Message sent! We'll respond within 24 hours.",
+    "error": "Something went wrong. Write to us directly via",
+    "whatsapp": "WhatsApp",
+    "noSpam": "No spam. Your info is not shared with anyone."
+  },
+  "faq": {
+    "title": "Frequently asked questions",
+    "items": [
+      {
+        "q": "Really in 7 days?",
+        "a": "Yes, for landing pages and websites with up to 5 sections. More complex projects may take 2-3 weeks, I'll clarify this in the proposal."
+      },
+      {
+        "q": "What do I need to have ready to start?",
+        "a": "Your business texts, your logo if you have one, and the photos you want to use. If you don't have photos, we use free professional images or generate them with AI."
+      },
+      {
+        "q": "Does it include hosting and domain?",
+        "a": "Deploy on Vercel is free and included. The domain (.com.ar costs ~$3,000/year at NIC.ar) you register or I help you with that."
+      },
+      {
+        "q": "Can I request changes after delivery?",
+        "a": "Yes, I include up to 2 rounds of corrections at no additional cost within the first 7 days of delivery."
+      },
+      {
+        "q": "Do you make online stores with payments?",
+        "a": "Yes, I integrate MercadoPago. That is quoted separately depending on the project's complexity level."
+      },
+      {
+        "q": "Why FDveloper?",
+        "a": "Because you work directly with me, no intermediaries. You know who builds your website, you can message me on WhatsApp anytime, and the price is much more affordable without losing quality."
+      }
+    ]
+  },
+  "whatsapp": {
+    "tooltip": "Let's talk",
+    "ariaLabel": "Contact via WhatsApp"
+  },
+  "footer": {
+    "copyright": "© 2025 FDveloper · Web development with AI · Argentina",
+    "hecho": "Built with Next.js"
+  },
+  "seo": {
+    "title": "FDveloper | Professional websites with AI, in 7 days",
+    "description": "Professional websites with integrated AI, in 7 days. Landing pages, websites and chatbots for businesses. Starting at $250,000.",
+    "keywords": "web development argentina, websites with ai, landing page argentina, web design buenos aires, argentine web agency, next.js argentina",
+    "ogDescription": "Modern web development with integrated AI for businesses. Delivery in 7 days starting at $250,000."
+  }
+}

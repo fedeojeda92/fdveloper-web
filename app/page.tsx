@@ -1,31 +1,5 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Servicios from "@/components/Servicios";
-import ChatbotBanner from "@/components/ChatbotBanner";
-import Portfolio from "@/components/Portfolio";
-import Proceso from "@/components/Proceso";
-import Precios from "@/components/Precios";
-import ContactForm from "@/components/ContactForm";
-import FAQ from "@/components/FAQ";
-import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+import {redirect} from 'next/navigation';
 
-export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <main>
-        <Hero />
-        <Servicios />
-        <ChatbotBanner />
-        <Portfolio />
-        <Proceso />
-        <Precios />
-        <ContactForm />
-        <FAQ />
-      </main>
-      <Footer />
-      <WhatsAppButton />
-    </>
-  );
+export default function RootPage() {
+  redirect('/es');
 }

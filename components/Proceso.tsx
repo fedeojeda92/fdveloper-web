@@ -1,37 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
-const pasos = [
-  {
-    numero: "01",
-    titulo: "Consulta gratuita",
-    descripcion:
-      "Me contás qué necesitás por WhatsApp. Sin formularios, sin reuniones innecesarias. Respondo el mismo día.",
-    icono: "💬",
-  },
-  {
-    numero: "02",
-    titulo: "Propuesta y precio",
-    descripcion:
-      "En 24hs te mando la propuesta con el detalle del proyecto y el precio final. Sin costos ocultos.",
-    icono: "📋",
-  },
-  {
-    numero: "03",
-    titulo: "Desarrollo",
-    descripcion:
-      "Arrancamos. Te muestro avances durante el proceso para que puedas dar feedback en tiempo real.",
-    icono: "⚙️",
-  },
-  {
-    numero: "04",
-    titulo: "Entrega y deploy",
-    descripcion:
-      "Tu web online en Vercel con dominio configurado. Listo en 7 días desde el inicio.",
-    icono: "🚀",
-  },
-];
+const stepIds = ["step1", "step2", "step3", "step4"] as const;
+const stepNumbers = ["01", "02", "03", "04"];
+const stepIcons = ["💬", "📋", "⚙️", "🚀"];
 
 const container = {
   hidden: {},
@@ -46,6 +20,8 @@ const item = {
 };
 
 export default function Proceso() {
+  const t = useTranslations("proceso");
+
   return (
     <section id="proceso" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <motion.div
@@ -56,10 +32,10 @@ export default function Proceso() {
         className="text-center mb-16"
       >
         <h2 className="text-4xl md:text-5xl font-bold font-space mb-4">
-          ¿Cómo trabajamos?
+          {t("title")}
         </h2>
         <p className="text-[#888888] text-lg max-w-2xl mx-auto">
-          Un proceso simple, transparente y sin sorpresas.
+          {t("subtitle")}
         </p>
       </motion.div>
 
@@ -70,23 +46,23 @@ export default function Proceso() {
         viewport={{ once: true, margin: "-100px" }}
         className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8"
       >
-        {pasos.map((paso, i) => (
+        {stepIds.map((stepId, i) => (
           <motion.div key={i} variants={item} className="relative">
             {/* Connector line (desktop only) */}
-            {i < pasos.length - 1 && (
+            {i < stepIds.length - 1 && (
               <div className="hidden lg:block absolute top-8 left-[60%] w-[calc(100%-20%)] h-px bg-gradient-to-r from-[#6C47FF]/40 to-[#00D4FF]/40" />
             )}
 
             <div className="relative z-10">
               <span className="text-6xl font-bold font-space bg-gradient-to-r from-[#6C47FF] to-[#00D4FF] bg-clip-text text-transparent opacity-20">
-                {paso.numero}
+                {stepNumbers[i]}
               </span>
-              <div className="text-2xl mb-2">{paso.icono}</div>
+              <div className="text-2xl mb-2">{stepIcons[i]}</div>
               <h3 className="text-lg font-bold font-space mt-2 mb-2">
-                {paso.titulo}
+                {t(`steps.${stepId}.titulo`)}
               </h3>
               <p className="text-sm text-[#888888] leading-relaxed">
-                {paso.descripcion}
+                {t(`steps.${stepId}.descripcion`)}
               </p>
             </div>
           </motion.div>

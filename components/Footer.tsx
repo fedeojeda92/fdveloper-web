@@ -1,27 +1,42 @@
 "use client";
 
-const links = [
-  { label: "Servicios", href: "#servicios" },
-  { label: "Portfolio", href: "#portfolio" },
-  { label: "Proceso", href: "#proceso" },
-  { label: "Precios", href: "#precios" },
-];
+import { useTranslations, useLocale } from "next-intl";
+import { useRouter, usePathname } from "next/navigation";
 
 export default function Footer() {
+  const t = useTranslations("footer");
+  const tNav = useTranslations("nav");
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const links = [
+    { label: tNav("servicios"), href: "#servicios" },
+    { label: tNav("portfolio"), href: "#portfolio" },
+    { label: tNav("proceso"), href: "#proceso" },
+    { label: tNav("planes"), href: "#precios" },
+  ];
+
+  const switchLocale = (newLocale: string) => {
+    const segments = pathname.split("/");
+    segments[1] = newLocale;
+    router.push(segments.join("/"));
+  };
+
   return (
     <footer className="border-t border-[#222222] bg-[#0A0A0A]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-8">
           {/* Logo + copyright */}
           <div className="flex flex-col items-center md:items-start gap-2">
-            <a href="#" className="text-xl font-bold font-space">
+            <a href={`/${locale}`} className="text-xl font-bold font-space">
               <span className="bg-gradient-to-r from-[#6C47FF] to-[#00D4FF] bg-clip-text text-transparent">
                 FD
               </span>
               <span className="text-[#F5F5F5]">veloper</span>
             </a>
             <p className="text-xs text-[#888888]">
-              © 2025 FDveloper · Desarrollo web con IA · Argentina
+              {t("copyright")}
             </p>
           </div>
 
@@ -81,7 +96,7 @@ export default function Footer() {
         </div>
 
         <p className="text-center text-xs text-[#888888] mt-8">
-          Hecho con Next.js y demasiado café ☕
+          {t("hecho")}
         </p>
       </div>
     </footer>

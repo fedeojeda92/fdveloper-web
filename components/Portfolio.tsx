@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { proyectos } from "@/data/proyectos";
 import Image from "next/image";
 
@@ -17,6 +18,8 @@ const item = {
 };
 
 export default function Portfolio() {
+  const t = useTranslations("portfolio");
+
   return (
     <section id="portfolio" className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <motion.div
@@ -27,11 +30,10 @@ export default function Portfolio() {
         className="text-center mb-16"
       >
         <h2 className="text-4xl md:text-5xl font-bold font-space mb-4">
-          Proyectos reales
+          {t("title")}
         </h2>
         <p className="text-[#888888] text-lg max-w-2xl mx-auto">
-          Cada proyecto es único. Estos son algunos de los negocios que ya
-          confían en FDveloper.
+          {t("subtitle")}
         </p>
       </motion.div>
 
@@ -92,7 +94,7 @@ export default function Portfolio() {
                 ))}
               </div>
               <span className="text-sm text-[#6C47FF] font-medium group-hover:text-[#00D4FF] transition-colors">
-                Ver proyecto →
+                {t("viewProject")}
               </span>
             </div>
           </motion.a>

@@ -1,11 +1,14 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 const WHATSAPP_URL =
   "https://wa.me/5491159568286?text=Hola!%20Vi%20tu%20web%20y%20quiero%20consultar%20sobre%20un%20proyecto";
 
 export default function Hero() {
+  const t = useTranslations("hero");
+
   return (
     <section className="min-h-screen flex items-center py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
@@ -23,23 +26,21 @@ export default function Hero() {
             transition={{ delay: 0.2 }}
             className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-[#6C47FF]/30 bg-[#6C47FF]/10 text-[#6C47FF] text-xs w-fit"
           >
-            ⚡ Disponible para nuevos proyectos
+            ⚡ {t("badge")}
           </motion.span>
 
           {/* H1 */}
           <h1 className="text-5xl md:text-6xl font-bold leading-tight font-space">
-            Webs profesionales
+            {t("title1")}
             <br />
             <span className="bg-gradient-to-r from-[#6C47FF] to-[#00D4FF] bg-clip-text text-transparent">
-              con IA integrada.
+              {t("title2")}
             </span>
           </h1>
 
           {/* Description */}
           <p className="text-[#888888] text-lg max-w-lg leading-relaxed">
-            Creamos tu sitio web a medida con tecnología moderna y
-            herramientas de inteligencia artificial. Listo en 7 días,
-            sin plantillas, sin excusas.
+            {t("description")}
           </p>
 
           {/* Buttons */}
@@ -48,7 +49,7 @@ export default function Hero() {
               href="#portfolio"
               className="bg-gradient-to-r from-[#6C47FF] to-[#00D4FF] text-white px-6 py-3 rounded-full font-medium hover:opacity-90 transition-opacity"
             >
-              Ver proyectos
+              {t("ctaProjects")}
             </a>
             <a
               href={WHATSAPP_URL}
@@ -56,12 +57,12 @@ export default function Hero() {
               rel="noopener noreferrer"
               className="border border-[#222222] text-[#F5F5F5] px-6 py-3 rounded-full font-medium hover:border-[#6C47FF]/50 transition-colors"
             >
-              Hablemos por WhatsApp
+              {t("ctaWhatsApp")}
             </a>
           </div>
 
           <p className="text-sm text-[#888888] opacity-60 mt-2">
-            O escribinos a{' '}
+            {t("orEmail")}{" "}
             <a
               href="mailto:contacto.fdveloper@gmail.com"
               className="underline hover:opacity-100 transition-opacity"
@@ -74,17 +75,17 @@ export default function Hero() {
           <div className="flex items-center gap-6 mt-8 pt-8 border-t border-[#222222]">
             <div className="text-center">
               <p className="text-2xl font-bold text-white">2+</p>
-              <p className="text-xs text-[#888888] mt-1">Proyectos<br/>entregados</p>
+              <p className="text-xs text-[#888888] mt-1 whitespace-pre-line">{t("statsProjects")}</p>
             </div>
             <div className="w-px h-10 bg-[#222222]"/>
             <div className="text-center">
-              <p className="text-2xl font-bold text-white">7 días</p>
-              <p className="text-xs text-[#888888] mt-1">Tiempo de<br/>entrega</p>
+              <p className="text-2xl font-bold text-white">7 days</p>
+              <p className="text-xs text-[#888888] mt-1 whitespace-pre-line">{t("statsTime")}</p>
             </div>
             <div className="w-px h-10 bg-[#222222]"/>
             <div className="text-center">
               <p className="text-2xl font-bold text-white">100%</p>
-              <p className="text-xs text-[#888888] mt-1">Clientes<br/>satisfechos</p>
+              <p className="text-xs text-[#888888] mt-1 whitespace-pre-line">{t("statsClients")}</p>
             </div>
           </div>
         </motion.div>
@@ -108,7 +109,7 @@ export default function Hero() {
             {/* Code */}
             <div className="p-6 font-mono text-sm leading-relaxed">
               <p>
-                <span className="text-[#888888]">&quot;// Tu nueva web&quot;</span>
+                <span className="text-[#888888]">&quot;// {t("codeComment")}&quot;</span>
               </p>
               <p>
                 <span className="text-[#00D4FF]">const</span>
@@ -117,27 +118,27 @@ export default function Hero() {
                 <span className="text-[#F5F5F5]"> {"{"}</span>
               </p>
               <p className="pl-4">
-                <span className="text-[#00D4FF]">velocidad</span>
+                <span className="text-[#00D4FF]">{t("codeSpeed")}</span>
                 <span className="text-[#F5F5F5]">: </span>
-                <span className="text-[#28C840]">&quot;⚡ 100/100&quot;</span>
+                <span className="text-[#28C840]">&quot;{t("codeSpeedVal")}&quot;</span>
                 <span>,</span>
               </p>
               <p className="pl-4">
-                <span className="text-[#00D4FF]">diseño</span>
+                <span className="text-[#00D4FF]">{t("codeDesign")}</span>
                 <span className="text-[#F5F5F5]">: </span>
-                <span className="text-[#28C840]">&quot;✦ a medida&quot;</span>
+                <span className="text-[#28C840]">&quot;{t("codeDesignVal")}&quot;</span>
                 <span>,</span>
               </p>
               <p className="pl-4">
-                <span className="text-[#00D4FF]">ia</span>
+                <span className="text-[#00D4FF]">{t("codeAI")}</span>
                 <span className="text-[#F5F5F5]">: </span>
-                <span className="text-[#28C840]">&quot;🤖 integrada&quot;</span>
+                <span className="text-[#28C840]">&quot;{t("codeAIVal")}&quot;</span>
                 <span>,</span>
               </p>
               <p className="pl-4">
-                <span className="text-[#00D4FF]">entrega</span>
+                <span className="text-[#00D4FF]">{t("codeDelivery")}</span>
                 <span className="text-[#F5F5F5]">: </span>
-                <span className="text-[#28C840]">&quot;📅 7 días&quot;</span>
+                <span className="text-[#28C840]">&quot;{t("codeDeliveryVal")}&quot;</span>
                 <span>,</span>
               </p>
               <p>
@@ -145,7 +146,7 @@ export default function Hero() {
               </p>
               <p className="mt-2 flex items-center gap-2">
                 <span className="text-[#888888]">// </span>
-                <span className="text-[#28C840]">✓ Listo para producción</span>
+                <span className="text-[#28C840]">{t("codeReady")}</span>
                 <span className="animate-pulse text-[#6C47FF]">|</span>
               </p>
             </div>

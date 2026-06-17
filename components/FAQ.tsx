@@ -2,36 +2,12 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-const preguntas = [
-  {
-    q: "¿En serio en 7 días?",
-    a: "Sí, para landing pages y sitios de hasta 5 secciones. Proyectos más complejos pueden tomar 2-3 semanas, te lo aclaro en la propuesta.",
-  },
-  {
-    q: "¿Qué necesito tener listo para arrancar?",
-    a: "Los textos de tu negocio, tu logo si tenés, y las fotos que querés usar. Si no tenés fotos, usamos imágenes profesionales gratuitas o generamos con IA.",
-  },
-  {
-    q: "¿Incluye hosting y dominio?",
-    a: "El deploy en Vercel es gratis y lo incluyo. El dominio (.com.ar cuesta ~$3.000/año en NIC.ar) lo registrás vos o te ayudo con eso.",
-  },
-  {
-    q: "¿Puedo pedir cambios después de la entrega?",
-    a: "Sí, incluyo hasta 2 rondas de correcciones sin costo adicional dentro de los primeros 7 días de entrega.",
-  },
-  {
-    q: "¿Hacés tiendas online con pagos?",
-    a: "Sí, integro MercadoPago. Eso se cotiza aparte según el nivel de complejidad del proyecto.",
-  },
-  {
-    q: "¿Por qué FDveloper?",
-    a: "Porque trabajás directamente conmigo, sin intermediarios. Sabés quién hace tu web, podés hablarme por WhatsApp en cualquier momento, y el precio es mucho más accesible sin perder calidad.",
-  },
-];
+import { useTranslations } from "next-intl";
 
 export default function FAQ() {
+  const t = useTranslations("faq");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const items = t.raw("items") as Array<{ q: string; a: string }>;
 
   return (
     <section id="faq" className="py-24 px-4 sm:px-6 lg:px-8 max-w-3xl mx-auto">
@@ -43,12 +19,12 @@ export default function FAQ() {
         className="text-center mb-16"
       >
         <h2 className="text-4xl md:text-5xl font-bold font-space mb-4">
-          Preguntas frecuentes
+          {t("title")}
         </h2>
       </motion.div>
 
       <div className="flex flex-col gap-3">
-        {preguntas.map((p, i) => (
+        {items.map((p, i) => (
           <motion.div
             key={i}
             initial={{ opacity: 0, y: 20 }}

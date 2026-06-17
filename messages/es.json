@@ -1,0 +1,208 @@
+{
+  "nav": {
+    "servicios": "Servicios",
+    "portfolio": "Portfolio",
+    "proceso": "Proceso",
+    "planes": "Planes",
+    "contacto": "Contacto",
+    "hablemos": "Hablemos"
+  },
+  "hero": {
+    "badge": "Disponible para nuevos proyectos",
+    "title1": "Webs profesionales",
+    "title2": "con IA integrada.",
+    "description": "Creamos tu sitio web a medida con tecnología moderna y herramientas de inteligencia artificial. Listo en 7 días, sin plantillas, sin excusas.",
+    "ctaProjects": "Ver proyectos",
+    "ctaWhatsApp": "Hablemos por WhatsApp",
+    "orEmail": "O escribinos a",
+    "statsProjects": "Proyectos\nentregados",
+    "statsTime": "Tiempo de\nentrega",
+    "statsClients": "Clientes\nsatisfechos",
+    "codeComment": "Tu nueva web",
+    "codeSpeed": "velocidad",
+    "codeDesign": "diseño",
+    "codeAI": "ia",
+    "codeDelivery": "entrega",
+    "codeSpeedVal": "⚡ 100/100",
+    "codeDesignVal": "✦ a medida",
+    "codeAIVal": "🤖 integrada",
+    "codeDeliveryVal": "📅 7 días",
+    "codeReady": "✓ Listo para producción"
+  },
+  "servicios": {
+    "title": "¿Qué hacemos?",
+    "subtitle": "Soluciones digitales escalables para hacer crecer tu negocio.",
+    "items": {
+      "landing": {
+        "titulo": "Desarrollo Web a Medida",
+        "descripcion": "¿Necesitás presencia digital sin complicaciones? Creamos landing pages de alto impacto con diseño web UX/UI profesional que convierten visitantes en clientes reales. Cada proyecto es único, por lo que nos enfocamos en brindarte una solución técnica que se ajuste perfectamente a tus objetivos comerciales y a tu presupuesto.",
+        "cta": "Solicitar cotización personalizada"
+      },
+      "sitio-completo": {
+        "titulo": "Sitio Web Profesional Completo",
+        "descripcion": "Tu negocio merece una presencia digital que genere confianza y resultados. Desarrollamos sitios web profesionales con programación en Next.js, optimización de rendimiento y SEO avanzado para que tus clientes te encuentren primero. Cada proyecto es único, por lo que nos enfocamos en brindarte una solución técnica que se ajuste perfectamente a tus objetivos comerciales y a tu presupuesto.",
+        "cta": "Consultar por este servicio"
+      },
+      "ia": {
+        "titulo": "Integración con Inteligencia Artificial",
+        "descripcion": "Automatizá tu atención al cliente y diferenciá tu negocio de la competencia. Implementamos chatbots con IA, asistentes virtuales y automatizaciones inteligentes que trabajan por vos las 24 horas del día. Soluciones digitales escalables que se adaptan a la evolución de tu negocio. Cada proyecto es único, por lo que nos enfocamos en brindarte una solución técnica que se ajuste perfectamente a tus objetivos comerciales y a tu presupuesto.",
+        "cta": "Consultar por este servicio"
+      },
+      "mantenimiento": {
+        "titulo": "Mantenimiento y Soporte Web",
+        "descripcion": "Tu sitio web necesita cuidados constantes para mantener su rendimiento y seguridad. Ofrecemos mantenimiento mensual con actualizaciones, monitoreo de uptime, optimización de velocidad y soporte técnico prioritario. Cada proyecto es único, por lo que nos enfocamos en brindarte una solución técnica que se ajuste perfectamente a tus objetivos comerciales y a tu presupuesto.",
+        "cta": "Solicitar cotización personalizada"
+      }
+    }
+  },
+  "chatbot": {
+    "title": "Probá la IA en esta misma web",
+    "description": "El chatbot que ves abajo a la derecha es exactamente lo que podés tener en tu negocio. Atención automática 24/7, responde preguntas frecuentes y deriva consultas.",
+    "cta": "Quiero esto en mi web →"
+  },
+  "portfolio": {
+    "title": "Proyectos reales",
+    "subtitle": "Cada proyecto es único. Estos son algunos de los negocios que ya confían en FDveloper.",
+    "viewProject": "Ver proyecto →"
+  },
+  "proceso": {
+    "title": "¿Cómo trabajamos?",
+    "subtitle": "Un proceso simple, transparente y sin sorpresas.",
+    "steps": {
+      "step1": {
+        "titulo": "Consulta gratuita",
+        "descripcion": "Me contás qué necesitás por WhatsApp. Sin formularios, sin reuniones innecesarias. Respondo el mismo día."
+      },
+      "step2": {
+        "titulo": "Propuesta y precio",
+        "descripcion": "En 24hs te mando la propuesta con el detalle del proyecto y el precio final. Sin costos ocultos."
+      },
+      "step3": {
+        "titulo": "Desarrollo",
+        "descripcion": "Arrancamos. Te muestro avances durante el proceso para que puedas dar feedback en tiempo real."
+      },
+      "step4": {
+        "titulo": "Entrega y deploy",
+        "descripcion": "Tu web online en Vercel con dominio configurado. Listo en 7 días desde el inicio."
+      }
+    }
+  },
+  "precios": {
+    "title": "Planes a medida",
+    "subtitle": "Cada proyecto es diferente. Consultanos y te armamos una propuesta adaptada a tus necesidades y presupuesto.",
+    "plans": {
+      "landing": {
+        "titulo": "Landing Page",
+        "descripcion": "Ideal para lanzar un servicio o producto nuevo",
+        "incluye": [
+          "Diseño a medida",
+          "Mobile responsive",
+          "SEO básico",
+          "CTA a WhatsApp",
+          "Deploy en Vercel",
+          "Entrega en 7 días"
+        ]
+      },
+      "completo": {
+        "titulo": "Sitio Completo",
+        "descripcion": "Para negocios que necesitan presencia digital completa",
+        "badge": "MÁS ELEGIDO",
+        "incluye": [
+          "Todo lo de Landing",
+          "Múltiples páginas",
+          "Catálogo o blog",
+          "Formulario de contacto",
+          "Google Analytics",
+          "SEO avanzado"
+        ]
+      },
+      "ia": {
+        "titulo": "Con IA",
+        "descripcion": "Automatización inteligente para escalar tu negocio",
+        "incluye": [
+          "Todo lo de Sitio Completo",
+          "Chatbot integrado",
+          "Asistente virtual",
+          "Automatizaciones",
+          "Integración con WhatsApp",
+          "Soporte prioritario"
+        ]
+      }
+    },
+    "consultar": "Consultar",
+    "mantenimiento": {
+      "texto": "¿Ya tenés tu web?",
+      "oferta": "Ofrecemos mantenimiento mensual con soporte técnico incluido"
+    }
+  },
+  "contacto": {
+    "title": "Contanos tu proyecto",
+    "subtitle": "Completá el formulario y te respondemos en menos de 24 horas. O si preferís,",
+    "whatsappLink": "escribinos por WhatsApp",
+    "name": "Nombre *",
+    "namePlaceholder": "Tu nombre",
+    "email": "Email *",
+    "business": "Nombre de tu negocio",
+    "businessPlaceholder": "Ej: Panadería La Esquina",
+    "service": "¿Qué servicio te interesa?",
+    "servicePlaceholder": "Seleccioná una opción",
+    "services": [
+      "Landing Page",
+      "Sitio Web Completo",
+      "Integración con IA",
+      "Mantenimiento y Soporte",
+      "No sé todavía, quiero asesoramiento"
+    ],
+    "message": "Mensaje *",
+    "messagePlaceholder": "Contanos un poco sobre tu negocio y qué necesitás...",
+    "sending": "Enviando...",
+    "send": "Enviar consulta",
+    "success": "¡Mensaje enviado! Te respondemos en menos de 24 horas.",
+    "error": "Algo salió mal. Escribinos directo por",
+    "whatsapp": "WhatsApp",
+    "noSpam": "No spam. Tu info no se comparte con nadie."
+  },
+  "faq": {
+    "title": "Preguntas frecuentes",
+    "items": [
+      {
+        "q": "¿En serio en 7 días?",
+        "a": "Sí, para landing pages y sitios de hasta 5 secciones. Proyectos más complejos pueden tomar 2-3 semanas, te lo aclaro en la propuesta."
+      },
+      {
+        "q": "¿Qué necesito tener listo para arrancar?",
+        "a": "Los textos de tu negocio, tu logo si tenés, y las fotos que querés usar. Si no tenés fotos, usamos imágenes profesionales gratuitas o generamos con IA."
+      },
+      {
+        "q": "¿Incluye hosting y dominio?",
+        "a": "El deploy en Vercel es gratis y lo incluyo. El dominio (.com.ar cuesta ~$3.000/año en NIC.ar) lo registrás vos o te ayudo con eso."
+      },
+      {
+        "q": "¿Puedo pedir cambios después de la entrega?",
+        "a": "Sí, incluyo hasta 2 rondas de correcciones sin costo adicional dentro de los primeros 7 días de entrega."
+      },
+      {
+        "q": "¿Hacés tiendas online con pagos?",
+        "a": "Sí, integro MercadoPago. Eso se cotiza aparte según el nivel de complejidad del proyecto."
+      },
+      {
+        "q": "¿Por qué FDveloper?",
+        "a": "Porque trabajás directamente conmigo, sin intermediarios. Sabés quién hace tu web, podés hablarme por WhatsApp en cualquier momento, y el precio es mucho más accesible sin perder calidad."
+      }
+    ]
+  },
+  "whatsapp": {
+    "tooltip": "Hablemos",
+    "ariaLabel": "Contactar por WhatsApp"
+  },
+  "footer": {
+    "copyright": "© 2025 FDveloper · Desarrollo web con IA · Argentina",
+    "hecho": "Hecho con Next.js"
+  },
+  "seo": {
+    "title": "FDveloper | Webs profesionales con IA, en 7 días",
+    "description": "Webs profesionales con IA integrada, en 7 días. Landing pages, sitios web y chatbots para negocios argentinos. Desde $250.000.",
+    "keywords": "desarrollo web argentina, páginas web con ia, landing page argentina, diseño web buenos aires, agencia web argentina, next.js argentina",
+    "ogDescription": "Desarrollo web moderno con IA integrada para negocios argentinos. Entrega en 7 días desde $250.000."
+  }
+}

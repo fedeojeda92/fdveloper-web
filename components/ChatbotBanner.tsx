@@ -1,8 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 
 export default function ChatbotBanner() {
+  const t = useTranslations("chatbot");
+
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       <motion.div
@@ -19,12 +22,10 @@ export default function ChatbotBanner() {
             </div>
             <div>
               <p className="text-white font-semibold text-lg">
-                Probá la IA en esta misma web
+                {t("title")}
               </p>
               <p className="text-[#888888] text-sm mt-1">
-                El chatbot que ves abajo a la derecha es exactamente lo que
-                podés tener en tu negocio. Atención automática 24/7, responde
-                preguntas frecuentes y deriva consultas.
+                {t("description")}
               </p>
             </div>
           </div>
@@ -35,7 +36,7 @@ export default function ChatbotBanner() {
             rel="noopener noreferrer"
             className="whitespace-nowrap px-6 py-3 rounded-full bg-gradient-to-r from-[#6C47FF] to-[#00D4FF] text-white text-sm font-medium hover:opacity-90 transition-opacity flex-shrink-0"
           >
-            Quiero esto en mi web →
+            {t("cta")}
           </a>
         </div>
       </motion.div>
